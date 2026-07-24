@@ -2,6 +2,8 @@
 
 Static company website for Sotai Biosystems, prepared for NVIDIA Inception / startup application review.
 
+Primary website: https://sotaibiosystems.com.tw/
+
 ## Files
 
 - `index.html` - homepage content
