@@ -234,6 +234,57 @@ a {
   color: var(--muted);
 }
 
+.slogan-section {
+  padding-bottom: 36px;
+}
+
+.slogan-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.slogan-card {
+  min-height: 250px;
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+  box-shadow: 0 14px 34px rgba(23, 32, 38, 0.07);
+}
+
+.slogan-label {
+  display: inline-grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  margin-bottom: 22px;
+  border-radius: 50%;
+  color: var(--white);
+  background: var(--teal-dark);
+  font-size: 1.05rem;
+  font-weight: 850;
+}
+
+.slogan-card:nth-child(2) .slogan-label {
+  background: var(--blue);
+}
+
+.slogan-card:nth-child(3) .slogan-label {
+  color: var(--ink);
+  background: var(--gold);
+}
+
+.slogan-card h3 {
+  margin: 0;
+  font-size: 1.22rem;
+}
+
+.slogan-card p {
+  margin: 12px 0 0;
+  color: var(--muted);
+}
+
 .section {
   max-width: var(--max);
   margin: 0 auto;
@@ -483,6 +534,7 @@ figcaption {
   }
 
   .summary-grid,
+  .slogan-grid,
   .feature-grid,
   .market-grid,
   .status-grid,
@@ -492,7 +544,8 @@ figcaption {
   }
 
   .feature-card,
-  .market-grid article {
+  .market-grid article,
+  .slogan-card {
     min-height: auto;
   }
 }
